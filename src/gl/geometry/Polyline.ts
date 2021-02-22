@@ -10,8 +10,8 @@ export class Polyline extends Geometry{
     //绘制几何
     draw(ctx:CanvasRenderingContext2D){
         ctx.save();
-        ctx.lineWidth=10;
-		ctx.strokeStyle="rgba(255,0,0,1.0)";
+        ctx.strokeStyle = "#ff0000";
+        ctx.lineWidth = 2;
 		//绘制
         ctx.beginPath();
         this._coodinates.forEach((point,idx)=>{

@@ -12,7 +12,7 @@ export class Map{
         
         //绑定事件
         //this._onDoubleClick=this._onDoubleClick.bind(this);
-        // this._canvas.addEventListener("dblclick", this._onDoubleClick);//鼠标双击事件
+        this._canvas.addEventListener("dblclick", this._onDoubleClick);//鼠标双击事件
         // this._canvas.addEventListener("mousedown", this._onMouseDown);//鼠标按下事件
         // this._canvas.addEventListener("mousemove", this._onMouseMove);//鼠标移动事件
         // this._canvas.addEventListener("mouseup", this._onMouseUp);//鼠标松开事件
@@ -24,5 +24,47 @@ export class Map{
     addGeometry(geometry: Geometry){
         geometry.draw(this._ctx);//绘制几何图形
         this._geometries.push(geometry); 
+    }
+
+     /*
+    *图形重绘事件
+    */
+    redraw(){
+
+    }
+
+    /*
+    *鼠标滚轮事件函数
+    */
+    _onWheel(){
+
+    }
+
+    /*
+    *鼠标移动事件函数
+    */
+   _onMouseMove(){
+
+    }
+
+    /*
+    *鼠标松开事件函数
+    */
+    _onMouseUp(){
+
+    }
+
+    /*
+    *鼠标按下事件函数
+    */
+   _onMouseDown(){
+
+    }
+
+    /*
+    *双击事件函数
+    */
+    _onDoubleClick(){
+
     }
 }
