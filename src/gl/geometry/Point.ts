@@ -14,8 +14,8 @@ export class Point extends Geometry{
     //重写绘制方法
     draw(ctx:CanvasRenderingContext2D){
         ctx.save();//保存初始化状态
-		ctx.strokeStyle="#09FCF0";
-        ctx.fillStyle="#4B09FC";
+		ctx.strokeStyle = "#ff0000";
+        ctx.fillStyle = "#ff0000";
         ctx.beginPath();
         //绘制
 		ctx.arc(this._x,this._y,Point.RADIUS,0,2*Math.PI,true);

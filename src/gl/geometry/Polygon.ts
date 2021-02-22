@@ -10,9 +10,9 @@ export class Polygon extends Geometry{
     //绘制几何
     draw(ctx:CanvasRenderingContext2D){
         ctx.save();
-        ctx.lineWidth=2;
-		ctx.strokeStyle="#F2F827";
-		ctx.fillStyle="rgba(255,0,0,0.8)";
+        ctx.strokeStyle = "#ff0000";
+        ctx.fillStyle = "#ff0000";
+        ctx.lineWidth = 2;
 		//绘制
         ctx.beginPath();
         this._coodinates.forEach((ring)=>{
