@@ -37,9 +37,9 @@ export class Map{
     *拖动地图
     */
     _onMouseDown(event) {
-        this._drag.flag = true;
-        this._drag.start.x = event.x;
-        this._drag.start.y = event.y;
+        // this._drag.flag = true;
+        // this._drag.start.x = event.x;
+        // this._drag.start.y = event.y;
     }
 
     /*
